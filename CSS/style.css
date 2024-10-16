@@ -1,0 +1,111 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #fec260;
+    font-family: "PT Sans Caption", sans-serif;
+}
+body{
+    background-color: #f7ecde;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    width: fit-content;
+    position: relative;
+}
+h1::before{
+    content: "";
+    height: 10%;
+    width: 100%;
+    background-color: #fec260;
+    top: 55%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all 0.5s;
+}
+h1:hover::before{
+    top: 35%;
+    height: 30%;
+}
+.dotted-line {
+    border-bottom: 2px dotted black; 
+}
+.h4{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, green, yellow);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-control:focus{
+    border-color: #fec260;
+    box-shadow: #fec260 0 0 10px;
+}
+button{
+    background-color: #d1512d !important;
+    color: white !important;
+}
+button:hover{
+    background-color: #bb4120 !important;
+}
+.visit-btn button{
+    background-color: #9eb23b !important;
+}
+.visit-btn button:hover{
+    background-color: #8a9e23 !important;
+}
+.delete-btn button{
+    background-color: #eb1d36 !important;
+}
+.delete-btn button:hover{
+    background-color: #d30820 !important;
+}
+.swal2-container button{
+    background-color: transparent !important;
+    color: black !important;
+}
+.swal2-title{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+    text-align: start;
+    font-weight: 400;
+}
+.swal2-html-container ul{
+    padding-left: 0;
+    font-size: 18px;
+    font-family: "PT Sans Caption", sans-serif;
+}
+.swal2-html-container ul li{
+    padding-top: 12px;
+}
+.swal2-actions{
+    display: none !important;
+}
+ul i{
+    color: #bb4120;
+}
+.traffic-light {
+    display: flex;
+    padding-bottom: 10px;
+}
+.circle {
+width: 20px;
+height: 20px;
+border-radius: 50%;
+margin-right: 10px;
+}
+.red {
+background-color: red;
+}
+.yellow {
+background-color: orange;
+}
+.green {
+background-color: green; 
+}

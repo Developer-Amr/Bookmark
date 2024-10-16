@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. provident vitae! Magni tempora perferendis eum non provident.">
+    <meta name="keywords" content="Bookmark, Bookmarker">
+    <title>Bookmark</title>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/Bookmark.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/media.css">
+  </head>
+  <body>
+    
+    <div class="container text-center">
+      <h1 class="py-5 m-auto text-center">Bookmarker</h1>
+
+      <div class="dotted-line"></div>
+
+      <h2 class="m-auto text-center pt-4 h4"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+      
+      <div class="row py-4 gy-3 text-start">
+        <div>
+          <label for="siteName" class="ps-0 my-2 fw-bold"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+          <input oninput="validateForm(this)" id="siteName" class="form-control" type="text" placeholder="Bookmark Name">
+        </div>
+        <div>
+          <label for="siteUrl" class="ps-0 my-2 fw-bold"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input oninput="validateForm(this)" id="siteUrl" class="form-control" type="text" placeholder="Website URL">
+        </div>
+      </div>
+      <button onclick="submit()" class="btn py-1 px-5 mb-4">Submit</button>
+
+      <div class="dotted-line"></div>
+
+      <table class="table mt-4 text-center bg-light">
+        <thead>
+          <tr>
+            <th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="sites">
+
+        </tbody>
+      </table>  
+    </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.0/dist/sweetalert2.all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
